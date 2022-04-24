@@ -14,7 +14,10 @@
     {% include head/custom.html %}
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
   </head>
-
+  <style>
+    body, h1, h2, h3, h4, h5, h6, input, textarea, select { font-family: 'Noto Sans KR', sans-serif; }
+  </style>
+  
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
